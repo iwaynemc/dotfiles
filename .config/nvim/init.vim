@@ -61,8 +61,8 @@ nmap <leader><Enter> O<ESC>
 nmap <Space> /
 
 "" Split
-noremap <Leader>j :<C-u>split<CR>
-noremap <Leader>l :<C-u>vsplit<CR>
+noremap <Leader>- :<C-u>split<CR>
+noremap <Leader>\ :<C-u>vsplit<CR>
 
 "" Git
 noremap <Leader>ga :Gwrite<CR>
@@ -93,6 +93,9 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Opens a tab edit command with the path of the currently edited file filled
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+"" Use jj to quit inser mode
+inoremap jj <ESC>
 
 
 
@@ -150,6 +153,7 @@ Plug 'dense-analysis/ale'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'joshdick/onedark.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 
 if isdirectory('/usr/local/opt/fzf')

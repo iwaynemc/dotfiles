@@ -11,7 +11,6 @@ ZSH_THEME=""
 zstyle ':omz:update' frequency 5 # frequency of update
 
 plugins=(
-	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	)
