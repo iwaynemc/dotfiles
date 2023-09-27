@@ -1,6 +1,8 @@
 # Alias
 alias dotfiles='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+setopt COMPLETEALIASES
+
 # ######## Homebrew ########
 export PATH=/opt/homebrew/bin:$PATH
 
