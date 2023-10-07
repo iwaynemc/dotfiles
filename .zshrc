@@ -9,7 +9,6 @@ setopt COMPLETEALIASES
 # ######## Homebrew ########
 export PATH=/opt/homebrew/bin:$PATH
 
-
 # ######## Oh-My-Zsh ########
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=""
@@ -23,10 +22,8 @@ plugins=(
 	zsh-autosuggestions
 	)
 
-bindkey '`' autosuggest-accept
-
 source $ZSH/oh-my-zsh.sh
-
+bindkey '`' autosuggest-accept
 
 # ######## Pure ########
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
@@ -47,4 +44,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
