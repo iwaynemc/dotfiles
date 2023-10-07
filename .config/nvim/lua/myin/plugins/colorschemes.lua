@@ -1,10 +1,10 @@
 return {
 	{
-		"EdenEast/nightfox.nvim",
+		"loctvl842/monokai-pro.nvim",
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			-- load the colorscheme here
-			vim.cmd([[colorscheme nordfox]])
+			vim.cmd([[colorscheme monokai-pro]])
 		end,
 	},
 }

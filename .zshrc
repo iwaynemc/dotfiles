@@ -2,6 +2,8 @@
 alias dotfiles='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias rl='exec zsh'
 
+export EDITOR='nvim'
+
 setopt COMPLETEALIASES
 
 # ######## Homebrew ########
