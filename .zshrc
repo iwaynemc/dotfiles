@@ -1,5 +1,5 @@
 # Alias
-alias dotfiles='/opt/homebrew/bin/git \
+alias dotfiles='/opt/homebrew/bin/git 
 --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias rl='exec zsh'
 alias nx='source $HOME/nx/bin/activate'
@@ -31,4 +31,7 @@ bindkey '`' autosuggest-accept
 # ######## Pure ########
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
+PURE_CMD_MAX_EXEC_TIME=5
+# turn on git stash status
+zstyle :prompt:pure:git:stash show yes
 prompt pure
