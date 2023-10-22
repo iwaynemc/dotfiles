@@ -37,4 +37,7 @@ fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 PURE_CMD_MAX_EXEC_TIME=5
 zstyle :prompt:pure:git:stash show yes # turn on git stash status
+print() {
+  [ 0 -eq $# -a "prompt_pure_precmd" = "${funcstack[-1]}" ] || builtin print "$@";
+}
 prompt pure
