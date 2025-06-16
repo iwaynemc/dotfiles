@@ -13,6 +13,7 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/opt/python@3.11/libexec/bin:$PATH
 # add nx bin to PATH
 export PATH=$HOME/nx/bin:$PATH
+export PATH=$HOME/.emacs.d/bin:$PATH
 # ######## Oh-My-Zsh ########
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR='nvim'
@@ -20,7 +21,7 @@ export NX_LICENSE_DIR='/Users/myin/'
 
 # ######## Oh-My-Zsh ########
 ZSH_THEME=""
-zstyle ':omz:update' frequency 5 # frequency of update
+zstyle ':omz:update' frequency 7 # frequency of update
 
 plugins=(
   extract
@@ -42,3 +43,5 @@ print() {
   [ 0 -eq $# -a "prompt_pure_precmd" = "${funcstack[-1]}" ] || builtin print "$@";
 }
 prompt pure
+
+. "$HOME/.local/bin/env"
