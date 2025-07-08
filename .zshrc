@@ -1,5 +1,5 @@
 # ######## Alias ########
-alias dotfiles='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfiles-vsc='GIT_DIR=$HOME/.dotfiles/ GIT_WORK_TREE=$HOME code ~ '
 alias rl='exec zsh'
 alias nx='source $HOME/nx/bin/activate'
@@ -15,7 +15,6 @@ export PATH=/opt/homebrew/opt/python@3.11/libexec/bin:$PATH
 export PATH=$HOME/nx/bin:$PATH
 export PATH=$HOME/.emacs.d/bin:$PATH
 export EDITOR='nvim'
-export NX_LICENSE_DIR='/Users/myin/'
 
 fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
